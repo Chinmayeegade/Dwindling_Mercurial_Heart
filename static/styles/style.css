@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: cursive;
+	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -42,15 +42,15 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: rgb(24, 20, 235);
+	color: crimson;
 }
 
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
 	color: white;
-	background-image: url(https://th.bing.com/th/id/OIP.hTIid0L6secMDo7J7jI-FgHaDc?w=328&h=163&c=7&r=0&o=5&dpr=1.5&pid=1.7);
-	border: 2px solid rgb(50, 8, 235);
+	background-color: transparent;
+	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -60,7 +60,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: rgb(56, 231, 21);
+	background-color: crimson;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -82,7 +82,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(17, 191, 235, 0.911);
+	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -97,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(226, 17, 245);
+	background-color: rgb(31, 30, 30);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -129,7 +129,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(225, 82, 238, 0.911);
+	color: rgba(240, 248, 255, 0.021);
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
@@ -140,7 +140,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: rgb(49, 12, 211);
+	color: crimson;
 }
 #header .hamburger {
 	height: 60px;
@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: linear-gradient(rgb(59, 57, 59), rgb(191, 71, 247));
+	background-image: url(./img/hero-bg.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -213,7 +213,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-
+	background-color: black;
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -248,7 +248,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgb(98, 73, 240);
+	background-color: crimson;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -266,7 +266,7 @@ p {
 
 /* Services Section */
 #services .services {
-	background-color: aquamarine;
+	background-color: black;
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
@@ -329,7 +329,7 @@ p {
 
 /* Projects section */
 #projects .projects {
-	background-color: aqua;
+	background-color: black;
 	flex-direction: column;
 	max-width: 1500px;
 	margin: 0 auto;
@@ -363,7 +363,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	color: black;
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -444,14 +444,14 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid rgb(178, 88, 230);
+	border: 7px solid crimson;
 	z-index: -1;
 }
 /* End About Section */
 
 /* contact Section */
 #contact .contact {
-	background-color: bisque;
+	background-color: black;
 	flex-direction: column;
 	max-width: 1500px;
 	margin: 0 auto;
@@ -461,21 +461,17 @@ p {
 	width: 100%;
 }
 #contact .contact-item {
-	width: 80%;
-	padding: 20px;
 	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
+	padding: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 18px 0 #f14040;
 	transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+	box-shadow: 0px 0px 5px 0 #f14040;
 }
 #contact .icon {
 	width: 70px;
@@ -483,9 +479,10 @@ p {
 	margin-bottom: 10px;
 }
 #contact .contact-info h1 {
-	font-size: 2.5rem;
+	font-size: 5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
+	float: left;
 }
 #contact .contact-info h2 {
 	font-size: 1.3rem;
@@ -496,7 +493,7 @@ p {
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: black;
 }
 #footer .footer {
 	min-height: 200px;
